@@ -1,12 +1,20 @@
 # Forensic Glass Type Classification
 
-A machine learning project that classifies glass samples based on their refractive index and chemical composition. The project explores data analysis, model comparison, classification performance, and prediction through a Python application.
+**A machine learning application for classifying glass samples based on refractive index and chemical composition.**
+
+🚀 **[Try the Live Application](https://forensic-glass-classifier.streamlit.app/)** | **[View Source Code on GitHub](https://github.com/Aswani-T-A/forensic-glass-classifier)**
 
 ## Project Overview
 
-Glass fragments recovered from crime scenes may provide useful forensic evidence. This project uses machine learning techniques to explore the classification of glass samples based on their measured properties.
+Glass fragments recovered from crime scenes can provide useful forensic information. This project explores machine learning methods for classifying glass samples using their measured properties.
 
-The project includes exploratory data analysis, visualization, model evaluation, and a saved classification model.
+The project includes exploratory data analysis, data visualization, model comparison, evaluation metrics, and an interactive web application for predictions.
+
+## Live Application
+
+Use the deployed application to enter glass measurements and obtain a model prediction directly in your browser. No local Python installation is required.
+
+**Application:** https://forensic-glass-classifier.streamlit.app/
 
 ## Features
 
@@ -16,33 +24,29 @@ The project includes exploratory data analysis, visualization, model evaluation,
 - Comparison of machine learning models
 - Confusion matrix and per-class F1-score visualization
 - Feature importance analysis
-- Saved model for reuse
-- Interactive application using Streamlit (if applicable to the current implementation)
+- Saved model for prediction
+- Interactive Streamlit prediction interface
 
 ## Technologies Used
 
 - Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
+- Pandas and NumPy
+- Matplotlib and Seaborn
 - Scikit-learn
 - Joblib
-- Streamlit (for the interactive application)
+- Streamlit
 
 ## Dataset
 
-This project uses the Glass Identification dataset from the UCI Machine Learning Repository.
+This project uses the Glass Identification dataset from the UCI Machine Learning Repository. It contains 214 glass samples with refractive-index and chemical-composition measurements.
 
-The dataset contains 214 glass samples and measurements such as refractive index and the chemical composition of the glass. The target variable represents the glass category.
+**Original dataset:** [UCI Machine Learning Repository — Glass Identification](https://doi.org/10.24432/C5WW2P)
 
-**Original dataset:** https://doi.org/10.24432/C5WW2P
+**Citation:**
 
-Dataset citation:
+German, B. (1987). *Glass Identification* [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C5WW2P
 
-German, B. (1987). *Glass Identification* [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C5WW2P.
-
-The dataset is licensed under Creative Commons Attribution 4.0 International (CC BY 4.0). Please refer to the original dataset page for its licence and attribution requirements.
+Refer to the original dataset page for the current licence and attribution terms.
 
 ## Project Structure
 
@@ -54,7 +58,6 @@ forensic-glass-classifier/
 ├── glass_model.joblib
 ├── requirements.txt
 ├── results.txt
-├── ML_ASSIGNMENT_2.pdf
 └── figures/
     ├── 01_class_distribution.png
     ├── 02_correlation_heatmap.png
@@ -65,64 +68,54 @@ forensic-glass-classifier/
     └── 07_per_class_f1.png
 ```
 
-## Installation
+## Run Locally
 
-1. Clone this repository:
+To run the project on your own computer:
+
+1. Clone the repository:
 
    ```bash
    git clone https://github.com/Aswani-T-A/forensic-glass-classifier.git
    ```
 
-2. Move into the project directory:
+2. Enter the project directory:
 
    ```bash
    cd forensic-glass-classifier
    ```
 
-3. Create and activate a Python virtual environment if desired.
-
-4. Install the dependencies:
+3. Install the required packages:
 
    ```bash
    pip install -r requirements.txt
    ```
 
-## Running the Project
+4. Launch the Streamlit application:
 
-Run the analysis script:
-
-```bash
-python glass_classifier.py
-```
-
-If `app.py` is the Streamlit application, launch it with:
-
-```bash
-streamlit run app.py
-```
-
-Use the generated figures and `results.txt` to review the analysis and model evaluation results.
+   ```bash
+   streamlit run app.py
+   ```
 
 ## Model Evaluation
 
-The project generates visualizations to examine class distribution, feature relationships, model comparison, confusion matrix, feature importance, and per-class F1-scores.
+The project generates visualizations for class distribution, feature relationships, model comparison, confusion matrix, feature importance, and per-class F1-scores.
 
-Refer to `results.txt` for the actual results produced by the current implementation. Performance depends on the selected model, preprocessing, and evaluation procedure.
+See `results.txt` for the results produced by the current implementation. Actual performance depends on the model, preprocessing, and evaluation procedure.
 
 ## References
 
-1. German, B. (1987). *Glass Identification* [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C5WW2P.
-2. Scikit-learn developers. *Scikit-learn Documentation: Model Selection and Evaluation*. https://scikit-learn.org/stable/model_selection.html
-3. Scikit-learn developers. *Scikit-learn Documentation: Metrics*. https://scikit-learn.org/stable/api/sklearn.metrics.html
-4. Pandas documentation: https://pandas.pydata.org/docs/
-5. Streamlit documentation: https://docs.streamlit.io/
+1. German, B. (1987). *Glass Identification* [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C5WW2P
+2. Scikit-learn documentation: https://scikit-learn.org/stable/
+3. Pandas documentation: https://pandas.pydata.org/docs/
+4. Streamlit documentation: https://docs.streamlit.io/
 
 ## Disclaimer
 
-This project is an educational machine learning assignment. Its predictions should not be treated as definitive forensic evidence or a substitute for professional forensic laboratory analysis.
+This is an educational machine learning project. Predictions should not be treated as definitive forensic evidence or a substitute for professional forensic laboratory analysis.
 
 ## Author
 
 Developed as a machine learning assignment.
 
-GitHub repository: https://github.com/Aswani-T-A/forensic-glass-classifier
+- **Live application:** https://forensic-glass-classifier.streamlit.app/
+- **GitHub repository:** https://github.com/Aswani-T-A/forensic-glass-classifier
