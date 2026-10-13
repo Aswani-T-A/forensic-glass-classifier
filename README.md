@@ -11,6 +11,8 @@ Glass fragments recovered from crime scenes can provide useful forensic informat
 The project includes exploratory data analysis, data visualization, model comparison, evaluation metrics, and an interactive web application for predictions.
 
 ## Live Application
+![Glass prediction interface](<glass-prediction 1.png>)
+![Glass prediction result](<glass-prediction 2.png>)
 
 Use the deployed application to enter glass measurements and obtain a model prediction directly in your browser. No local Python installation is required.
 
